@@ -13,9 +13,8 @@ export default defineConfig({
       },
       {
         find: "lib",
-        replacement: resolve(__dirname, 'lib')
+        replacement: fileURLToPath(new URL('./lib', import.meta.url))
       }
-      },
     ],
   },
 });
